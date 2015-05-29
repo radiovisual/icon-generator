@@ -18,8 +18,8 @@ if (!Object.keys(iconSizes)) {
 
 var platforms = argv._;
 
-var source_image = path.join(__dirname, argv.s);
-var output_destination = argv.o ? path.join(__dirname, argv.o) : path.join(__dirname, "");
+var source_image = argv.s;
+var output_destination = argv.o || "";
 
 outputSessionInformation(platforms, source_image, output_destination);
 
@@ -44,11 +44,10 @@ function processQueObject(queObject){
 
         if (err) throw err;
 
-        var filename = queObject.filename;
-        var extension = path.extname(source_image);
+        var filename = queObject.filename + path.extname(source_image);
         var folder = queObject.folder;
-        var fullpath = output_destination + "/"+ folder + "/" + filename + extension;
-        var dirpath = output_destination + "/"+ folder;
+        var fullpath = path.join(output_destination, folder, filename);
+        var dirpath = path.join(output_destination,folder);
 
         mkdirp(dirpath, function (err) {
 
