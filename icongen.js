@@ -77,6 +77,7 @@ function processQueObject(queObject){
                             console.log( chalk.gray("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"));
                             console.log( chalk.magenta("COMPLETE: ") + chalk.white("processed "+index+" icons"));
                             console.log( chalk.gray("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"));
+                            process.exit(0);
                         }
                     });
                 });

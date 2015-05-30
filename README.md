@@ -1,8 +1,13 @@
 #Icon Generator
 
-Auto-generate multiple variably-sized icon files from one single image source. **This project is a work in progress. Not ready for wide-spread use.**
+Auto-generate multiple variably-sized icon files from one single image source.
+**This project is a work in progress. Not ready for wide-spread use.**
 
 ##Usage
+
+```
+$ ./icongen.js [platforms] -s [source image] -o [output destination]
+```
 
 Currently, only iOS is fully supported. To generate all iOS icons, simply type:
 
