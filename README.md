@@ -1,7 +1,8 @@
 #Icon Generator
 
 Auto-generate multiple variably-sized icon files from one single image source.
-**This project is a work in progress. Not ready for wide-spread use.**
+Currently, only iOS icons are generated, but Andriod and Windows Phone support is coming soon.
+**This project is a work in progress.**
 
 ##Usage
 
@@ -19,7 +20,7 @@ If no option is supplied for `-o` then the current directory will be used.
 
 ##Planned Features
 
-- Full iOS, Android and Windows Phone Support
+- Full Android and Windows Phone Support
 - Easily customize the output sizes by supplying a config file
 
 ##License
