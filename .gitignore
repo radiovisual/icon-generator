@@ -1,8 +1,7 @@
 .idea
 .DS_Store
 node_modules
-initproject.bat
 ios
 android
-
-
+*.logs
+*.log
